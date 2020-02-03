@@ -12,5 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+   return view('about');
+})->name('home');;
+
+Route::get('/portfolio', function () {
+   return view('portfolio');
+})->name('portfolio');;
+
+Route::get('/resume', function () {
+   return view('resume');
+})->name('resume');;

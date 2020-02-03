@@ -1,0 +1,86 @@
+.main-wrapper {
+  margin-left: 21vw;
+  background-color: #111821;
+  height: 100vh;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 5rem 2rem;
+  width: 21vw;
+  background-color: #1E2A3A;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.sidebar-content {
+  width: 100%;
+  text-align: center;
+}
+
+.sidebar-content img {
+  border-radius: 50%;
+}
+
+.sidebar-content-info {
+  color: #fff;
+}
+
+.sidebar-content-info h3 {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 30px;
+}
+
+.sidebar-content-info p {
+  font-size: 14px;
+}
+
+.sidebar-content-social img {
+  width: 3rem;
+  margin: 5px 8px;
+}
+
+.sidebar hr {
+  border-top: 1px solid #47505E !important;
+}
+
+.sidebar-menu {
+  margin: 0 4rem;
+}
+
+.sidebar-menu a {
+  display: block;
+  color: #BCC0C4;
+  padding: 6px;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.sidebar-menu a.active {
+  color: #FC7FB2 !important;
+}
+
+.sidebar-menu a:hover:not(.active) {
+  color: white;
+}
+
+.sidebar-menu a:hover {
+  text-decoration: none;
+}
+
+.sidebar-menu a .fa {
+  padding: 4px 16px;
+}
+
+.sidebar-menu a:nth-child(2) .fa {
+  padding: 4px 6px 4px 14px;
+}
+
+.sidebar-menu a:nth-child(3) .fa {
+  font-size: 15px;
+}
+
