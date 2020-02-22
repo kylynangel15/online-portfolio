@@ -21,8 +21,4 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/resume.scss', 'public/css');
 
 mix
-  .copy("resources/assets/images", "public/assets/images")
-  .copy(
-    "resources/assets/images",
-    "public/assets/images"
-  )
+  .copy("resources/assets/images", "public/assets/images");

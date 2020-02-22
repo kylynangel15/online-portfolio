@@ -62,4 +62,29 @@
 		}
 	}
 
+	&-skills {
+		h2 {
+			border-left: 4px solid #FC7FB2;
+		    padding-left: 1rem;
+		    color: #F3F3F4;
+		    font-weight: 700;
+		}
+
+		.skills-container {
+			display: grid;
+		    grid-template-columns: auto auto auto auto auto;
+			padding: 10px;
+			
+			.skills-item {
+				padding: 20px;
+				font-size: 30px;
+				text-align: center;
+			}
+
+		}
+
+
+	}
+
 }
+

@@ -12,7 +12,7 @@
 			<h3>Full Stack Web Developer</h3>
 			
 			<div class="about-info">
-				<p>I'm a Full-Stack Web Developer specialised in PHP, Laravel Framework RESTful API, Javascript, CSS/SCSS, HTML, Vuejs and other skill sets. Hard Working individual and possessing a strong willingness to learn.</p>
+				<p>I'm a Full-Stack Web Developer specialised in PHP, Laravel Framework, RESTful API, Javascript, CSS/SCSS, HTML, Vuejs and other skill sets. Hard Working individual and possessing a strong willingness to learn.</p>
 				
 				<div class="about-info-button">
 					<button class="portfolio-button" type="button" class="btn btn-danger">View Portfolio</button>
@@ -22,14 +22,26 @@
 		</div>
 
 		<hr>
-		    <div class="c100 p30 small dark">
-	            <span>30%</span>
-	            <div class="slice">
-	                <div class="bar"></div>
-	                <div class="fill"></div>
-	            </div>
-	        </div>
+		
+		<div class="container about-skills" >
+			<h2>Skills</h2>
+			
+			<div class="skills-container">
+				<img class="skills-item" src="{{ asset('assets/images/laravel.png') }}">
+				<img class="skills-item" src="{{ asset('assets/images/wordpress.png') }}">
+				<img class="skills-item" src="{{ asset('assets/images/vue.png') }}">
+				<img class="skills-item" src="{{ asset('assets/images/restapi.png') }}">
+				<img class="skills-item" src="{{ asset('assets/images/css_html_js.png') }}">
+				<img class="skills-item" src="{{ asset('assets/images/sass.png') }}">
+				<img class="skills-item" src="{{ asset('assets/images/npm.png') }}">
+				<img class="skills-item" src="{{ asset('assets/images/yarn.png') }}">
+				<img class="skills-item" src="{{ asset('assets/images/devc.png') }}">
+				<img class="skills-item" src="{{ asset('assets/images/php.png') }}">
+				<img class="skills-item" src="{{ asset('assets/images/vbnet.png') }}">
+				<img class="skills-item" src="{{ asset('assets/images/mysql.png') }}">
+			</div>
 
+		</div>
 
 	</div>
 

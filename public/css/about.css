@@ -940,3 +940,22 @@
   outline-color: #d6206a !important;
 }
 
+.about-skills h2 {
+  border-left: 4px solid #FC7FB2;
+  padding-left: 1rem;
+  color: #F3F3F4;
+  font-weight: 700;
+}
+
+.about-skills .skills-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 10px;
+}
+
+.about-skills .skills-container .skills-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
