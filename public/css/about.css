@@ -957,5 +957,24 @@
   padding: 20px;
   font-size: 30px;
   text-align: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.about-skills .skills-container .skills-item img {
+  width: 7vw;
+  height: auto;
+  margin: auto;
+}
+
+.about-skills .skills-container .skills-item p {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 5px;
 }
 

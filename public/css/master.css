@@ -1,7 +1,7 @@
 .main-wrapper {
   background-color: #111821;
   margin-left: 27rem;
-  height: 135vh;
+  height: 100%;
   width: auto;
 }
 
@@ -20,7 +20,7 @@ hr {
 .sidebar {
   margin: 0;
   padding: 5rem 2rem;
-  width: 27rem;
+  width: 28rem;
   background-color: #1E2A3A;
   position: fixed;
   height: 100%;

@@ -27,18 +27,66 @@
 			<h2>Skills</h2>
 			
 			<div class="skills-container">
-				<img class="skills-item" src="{{ asset('assets/images/laravel.png') }}">
-				<img class="skills-item" src="{{ asset('assets/images/wordpress.png') }}">
-				<img class="skills-item" src="{{ asset('assets/images/vue.png') }}">
-				<img class="skills-item" src="{{ asset('assets/images/restapi.png') }}">
-				<img class="skills-item" src="{{ asset('assets/images/css_html_js.png') }}">
-				<img class="skills-item" src="{{ asset('assets/images/sass.png') }}">
-				<img class="skills-item" src="{{ asset('assets/images/npm.png') }}">
-				<img class="skills-item" src="{{ asset('assets/images/yarn.png') }}">
-				<img class="skills-item" src="{{ asset('assets/images/devc.png') }}">
-				<img class="skills-item" src="{{ asset('assets/images/php.png') }}">
-				<img class="skills-item" src="{{ asset('assets/images/vbnet.png') }}">
-				<img class="skills-item" src="{{ asset('assets/images/mysql.png') }}">
+				<div class="skills-item">
+					<img src="{{ asset('assets/images/laravel.png') }}">
+					<p>Laravel</p>
+				</div>
+				<div class="skills-item">
+					<img src="{{ asset('assets/images/wordpress.png') }}">
+					<p>Wordpress</p>
+				</div>
+				<div class="skills-item">
+					<img src="{{ asset('assets/images/php.png') }}">
+					<p>PHP</p>
+				</div>
+				<div class="skills-item">
+					<img src="{{ asset('assets/images/devc.png') }}">
+					<p>C++</p>
+				</div>
+				<div class="skills-item">
+					<img src="{{ asset('assets/images/vb.net.png') }}">
+					<p>VB.NET</p>
+				</div>
+				<div class="skills-item">
+					<img src="{{ asset('assets/images/mysql.png') }}">
+					<p>SQL Database</p>
+				</div>
+				<div class="skills-item">
+					<img src="{{ asset('assets/images/npm.png') }}">
+					<p>NPM</p>
+				</div>
+				<div class="skills-item">
+					<img src="{{ asset('assets/images/yarn.png') }}">
+					<p>YARN</p>
+				</div>
+				<div class="skills-item">
+					<img src="{{ asset('assets/images/restapi.png') }}">
+					<p>REST API</p>
+				</div>
+				<div class="skills-item">
+					<img src="{{ asset('assets/images/vue.png') }}">
+					<p>Vue JS</p>
+				</div>
+				<div class="skills-item">
+					<img src="{{ asset('assets/images/html.png') }}">
+					<p>HTML</p>
+				</div>
+				<div class="skills-item">
+					<img src="{{ asset('assets/images/css.png') }}">
+					<p>CSS</p>
+				</div>
+				<div class="skills-item">
+					<img src="{{ asset('assets/images/js.png') }}">
+					<p>Javascript</p>
+				</div>
+				<div class="skills-item">
+					<img src="{{ asset('assets/images/sass.png') }}">
+					<p>SASS</p>
+				</div>
+				<div class="skills-item">
+					<img src="{{ asset('assets/images/ps.png') }}">
+					<p>Photoshop</p>
+				</div>
 			</div>
 
 		</div>
