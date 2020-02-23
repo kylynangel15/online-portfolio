@@ -6,7 +6,7 @@
 @section('content')
   @include('components.sidebar')
   <div class="main-wrapper">
-  @yield('main')
+	  @yield('main')
   </div>
   @include('components.footer')
 @endsection

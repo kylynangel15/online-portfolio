@@ -1,7 +1,8 @@
 .main-wrapper {
-  margin-left: 21vw;
   background-color: #111821;
-  height: 100vh;
+  margin-left: 27rem;
+  height: 100%;
+  width: auto;
 }
 
 a {
@@ -12,10 +13,14 @@ a:hover {
   text-decoration: none !important;
 }
 
+hr {
+  border-top: 1px solid #47505E !important;
+}
+
 .sidebar {
   margin: 0;
   padding: 5rem 2rem;
-  width: 21vw;
+  width: 28rem;
   background-color: #1E2A3A;
   position: fixed;
   height: 100%;
@@ -49,10 +54,6 @@ a:hover {
 .sidebar-content-social img {
   width: 3rem;
   margin: 5px 8px;
-}
-
-.sidebar hr {
-  border-top: 1px solid #47505E !important;
 }
 
 .sidebar-menu {
