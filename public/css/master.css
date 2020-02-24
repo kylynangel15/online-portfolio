@@ -3,6 +3,7 @@
   margin-left: 28rem;
   height: 100%;
   width: auto;
+  min-height: 100vh;
 }
 
 a {

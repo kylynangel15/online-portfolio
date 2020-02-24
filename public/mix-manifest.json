@@ -6,5 +6,6 @@
     "/css/portfolio.css": "/css/portfolio.css",
     "/css/circle.css": "/css/circle.css",
     "/css/resume.css": "/css/resume.css",
-    "/js/master.js": "/js/master.js"
+    "/js/master.js": "/js/master.js",
+    "/js/portfolio.js": "/js/portfolio.js"
 }
