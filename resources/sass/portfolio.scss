@@ -14,6 +14,7 @@
 
 			img {
 				width: 100%;
+				cursor: pointer;
 			}
 
 			a {
@@ -24,6 +25,10 @@
 				&:hover{
 					color: #FC7FB2 !important;
 				}
+			}
+
+			.gallery {
+				// display: none;
 			}
 
 		}

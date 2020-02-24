@@ -24,3 +24,4 @@ mix
 
 mix
   .copy("resources/assets/images", "public/assets/images");
+

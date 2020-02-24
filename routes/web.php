@@ -22,3 +22,8 @@ Route::get('/portfolio', function () {
 Route::get('/resume', function () {
    return view('resume');
 })->name('resume');;
+
+
+//API CONTROLS
+
+Route::get('get-portfolios', 'PortfolioController@index')->name('portfolio.get');
