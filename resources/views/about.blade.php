@@ -88,12 +88,8 @@
 					<p>Photoshop</p>
 				</div>
 			</div>
-
 		</div>
-
 	</div>
-
-
 @endsection
 
 

@@ -30,7 +30,7 @@
 			<i class="fa fa-user" aria-hidden="true"></i>About me
 		</a>
 		<a id="sidenav-portfolio" href="{{ route('portfolio') }}"> 
-			<i class="fa fa-code" aria-hidden="true"></i>Portfolio
+			<i class="fa fa-laptop" aria-hidden="true"></i>My Works
 		</a>
 		<a id="sidenav-resume" href="{{ route('resume') }}"> 
 			<i class="fa fa-file" aria-hidden="true"></i>Resume

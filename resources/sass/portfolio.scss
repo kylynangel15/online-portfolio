@@ -1,0 +1,32 @@
+
+.portfolio {
+	padding: 5rem;
+
+	&-container {
+		display: grid;
+	    grid-template-columns: auto auto auto;
+		padding: 10px;
+
+		.portfolio-item {
+			padding: 20px;
+			font-size: 30px;
+			text-align: center;
+
+			img {
+				width: 100%;
+			}
+
+			a {
+				color: #fff;
+			    font-size: 16px;
+			    margin-top: 5px;
+				
+				&:hover{
+					color: #FC7FB2 !important;
+				}
+			}
+
+		}
+
+	}
+}
