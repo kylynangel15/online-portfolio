@@ -26,12 +26,13 @@
 					color: #FC7FB2 !important;
 				}
 			}
-
-			.gallery {
-				// display: none;
-			}
-
 		}
-
 	}
+
+	.gallery {
+			display: none;
+			&-img {
+				width: 10%;
+			}
+		}
 }

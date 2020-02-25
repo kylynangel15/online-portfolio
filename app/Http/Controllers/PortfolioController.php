@@ -19,7 +19,9 @@ class PortfolioController extends Controller
         return response()->json([
             '0' =>  [
                         'title' => 'Murasaki7',
-                        'cap'   => "Visit <a href='http://www.murasaki7.com/en' target='_blank'>Murasaki7</a>",
+                        'cap'   => "Visit 
+                                    <a href='http://www.murasaki7.com/en' target='_blank'>Murasaki7 EN</a> | 
+                                    <a href='http://www.murasaki7.com/jp' target='_blank'>Murasaki7 JP</a>",
                         'cover' => asset('assets/images/murasaki/murasaki7.png'),
                         'site'  => "https://www.murasaki7.com/en",
                         'imgs'  =>  [   
@@ -28,6 +30,9 @@ class PortfolioController extends Controller
                     ],
             '1' =>  [
                         'title' => 'Heyvideo',
+                        'cap'   => "Visit 
+                                    <a href='http://heyvideo.app/en' target='_blank'>Heyvideo EN</a> | 
+                                    <a href='http://heyvideo.app/jp' target='_blank'>Heyvideo JP</a>",
                         'cover' => asset('assets/images/heyvideo/heyvideo.png'),
                         'site'  => "https://heyvideo.app/en",
                         'imgs'  =>  [   
@@ -36,6 +41,9 @@ class PortfolioController extends Controller
                         ],
             '2' =>  [
                         'title' => 'Chamoji',
+                        'cap'   => "Visit 
+                                    <a href='http://chamoji.com/en' target='_blank'>Chamoji EN</a> | 
+                                    <a href='http://chamoji.com/jp' target='_blank'>Chamoji JP</a>",
                         'cover' => asset('assets/images/chamoji/chamoji.png'),
                         'site'  => "https://www.chamoji.com/en",
                         'imgs'  =>  [   
@@ -44,6 +52,8 @@ class PortfolioController extends Controller
                         ],
             '3' =>  [
                         'title' => 'NST Pictures',
+                        'cap'   => "Visit 
+                                    <a href='https://nstpictures.com/' target='_blank'>NST Pictures</a>",
                         'cover' => asset('assets/images/nstpictures/nstpicture.png'),
                         'site'  => "https://nstpictures.com/",
                         'imgs'  =>  [   
@@ -52,6 +62,8 @@ class PortfolioController extends Controller
                         ],
             '4' =>  [
                         'title' => 'Game News Ninja',
+                        'cap'   => "Visit 
+                                    <a href='https://gamenewsninja.com' target='_blank'>Game News Ninja</a>",
                         'cover' => asset('assets/images/gnn/gnn.png'),
                         'site'  => "https://www.gamenewsninja.com",
                         'imgs'  =>  [   

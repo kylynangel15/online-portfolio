@@ -29,3 +29,11 @@
   color: #FC7FB2 !important;
 }
 
+.portfolio .gallery {
+  display: none;
+}
+
+.portfolio .gallery-img {
+  width: 10%;
+}
+

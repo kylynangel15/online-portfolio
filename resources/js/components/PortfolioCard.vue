@@ -1,23 +1,9 @@
 <template>
 	<div class='portfolio-item'>
-		<img :src="data.cover" v-on:click="showGallery()">
+		<img :src="data.cover" v-on:click="showGallery(data)">
 		<a :href="data.site" target="_blank" v-html="data.title"></a>
-		
-
-
-
-	<div class="gallery" v-for="(img, index) in data.imgs">
-
-	<a :href="img" data-fancybox="gallery" data-caption="Visit <a href='http://www.murasaki7.com/en' target='_blank'>Murasaki7</a> ">
-		<img :src="img" >
-	</a>
-
 	</div>
-
-
-</div>
 </template>
-
 
 <script>
 	
@@ -30,8 +16,8 @@
 		 		data: Object,
 		},
 		methods: {
-			showGallery(){
-				console.log('sample');
+			showGallery(data){
+				this.$emit('change_images', data)
 			}
 		}
 	}

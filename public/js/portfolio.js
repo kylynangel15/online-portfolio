@@ -1915,20 +1915,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {};
@@ -1937,8 +1923,8 @@ __webpack_require__.r(__webpack_exports__);
     data: Object
   },
   methods: {
-    showGallery: function showGallery() {
-      console.log('sample');
+    showGallery: function showGallery(data) {
+      this.$emit('change_images', data);
     }
   }
 });
@@ -2428,43 +2414,21 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "portfolio-item" },
-    [
-      _c("img", {
-        attrs: { src: _vm.data.cover },
-        on: {
-          click: function($event) {
-            return _vm.showGallery()
-          }
+  return _c("div", { staticClass: "portfolio-item" }, [
+    _c("img", {
+      attrs: { src: _vm.data.cover },
+      on: {
+        click: function($event) {
+          return _vm.showGallery(_vm.data)
         }
-      }),
-      _vm._v(" "),
-      _c("a", {
-        attrs: { href: _vm.data.site, target: "_blank" },
-        domProps: { innerHTML: _vm._s(_vm.data.title) }
-      }),
-      _vm._v(" "),
-      _vm._l(_vm.data.imgs, function(img, index) {
-        return _c("div", { staticClass: "gallery" }, [
-          _c(
-            "a",
-            {
-              attrs: {
-                href: img,
-                "data-fancybox": "gallery",
-                "data-caption":
-                  "Visit <a href='http://www.murasaki7.com/en' target='_blank'>Murasaki7</a> "
-              }
-            },
-            [_c("img", { attrs: { src: img } })]
-          )
-        ])
-      })
-    ],
-    2
-  )
+      }
+    }),
+    _vm._v(" "),
+    _c("a", {
+      attrs: { href: _vm.data.site, target: "_blank" },
+      domProps: { innerHTML: _vm._s(_vm.data.title) }
+    })
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -14601,15 +14565,14 @@ module.exports = g;
 /*!***************************************************!*\
   !*** ./resources/js/components/PortfolioCard.vue ***!
   \***************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _PortfolioCard_vue_vue_type_template_id_134e301d___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PortfolioCard.vue?vue&type=template&id=134e301d& */ "./resources/js/components/PortfolioCard.vue?vue&type=template&id=134e301d&");
 /* harmony import */ var _PortfolioCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PortfolioCard.vue?vue&type=script&lang=js& */ "./resources/js/components/PortfolioCard.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _PortfolioCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _PortfolioCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -14639,7 +14602,7 @@ component.options.__file = "resources/js/components/PortfolioCard.vue"
 /*!****************************************************************************!*\
   !*** ./resources/js/components/PortfolioCard.vue?vue&type=script&lang=js& ***!
   \****************************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14688,6 +14651,8 @@ new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: "#portfolio",
   data: {
     portfolios: [],
+    selected_porfolio: [],
+    portfolio_imgs: [],
     get_portfolio_route: getPortfolioRoute
   },
   created: function created() {
@@ -14702,6 +14667,14 @@ new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
       })["catch"](function (error) {
         console.log(error);
       });
+    },
+    updateImages: function updateImages(updateImgs) {
+      $(".gallery").find("a").remove();
+      var images = updateImgs.imgs[0];
+      images.forEach(function (path) {
+        $('.gallery').append("<a href=\"" + path + "\" \n\t\t\t\t\t\tdata-fancybox=\"gallery\" \n\t\t\t\t\t\tdata-caption=\"" + updateImgs.cap + "\">\n\t\t\t\t\t<img src=\"" + path + "\" >\n\t\t\t\t</a>");
+      });
+      $(".gallery").find("a")[0].click();
     }
   },
   components: {
