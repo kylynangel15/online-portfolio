@@ -978,3 +978,7 @@
   margin-top: 5px;
 }
 
+.about-skills .skills-container .skills-item .skill-rate {
+  margin: auto;
+}
+

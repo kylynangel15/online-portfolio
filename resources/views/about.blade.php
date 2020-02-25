@@ -6,7 +6,7 @@
 
 
 @section('main')
-	<div class="about">
+	<div id="about" class="about">
 		<div class="container">
 			<h1>Kylyn Angel M. Luterte</h1>
 			<h3>Full Stack Web Developer</h3>
@@ -27,66 +27,11 @@
 			<h2>Skills</h2>
 			
 			<div class="skills-container">
-				<div class="skills-item">
-					<img src="{{ asset('assets/images/laravel.png') }}">
-					<p>Laravel</p>
-				</div>
-				<div class="skills-item">
-					<img src="{{ asset('assets/images/wordpress.png') }}">
-					<p>Wordpress</p>
-				</div>
-				<div class="skills-item">
-					<img src="{{ asset('assets/images/php.png') }}">
-					<p>PHP</p>
-				</div>
-				<div class="skills-item">
-					<img src="{{ asset('assets/images/devc.png') }}">
-					<p>C++</p>
-				</div>
-				<div class="skills-item">
-					<img src="{{ asset('assets/images/vb.net.png') }}">
-					<p>VB.NET</p>
-				</div>
-				<div class="skills-item">
-					<img src="{{ asset('assets/images/mysql.png') }}">
-					<p>SQL Database</p>
-				</div>
-				<div class="skills-item">
-					<img src="{{ asset('assets/images/npm.png') }}">
-					<p>NPM</p>
-				</div>
-				<div class="skills-item">
-					<img src="{{ asset('assets/images/yarn.png') }}">
-					<p>YARN</p>
-				</div>
-				<div class="skills-item">
-					<img src="{{ asset('assets/images/restapi.png') }}">
-					<p>REST API</p>
-				</div>
-				<div class="skills-item">
-					<img src="{{ asset('assets/images/vue.png') }}">
-					<p>Vue JS</p>
-				</div>
-				<div class="skills-item">
-					<img src="{{ asset('assets/images/html.png') }}">
-					<p>HTML</p>
-				</div>
-				<div class="skills-item">
-					<img src="{{ asset('assets/images/css.png') }}">
-					<p>CSS</p>
-				</div>
-				<div class="skills-item">
-					<img src="{{ asset('assets/images/js.png') }}">
-					<p>Javascript</p>
-				</div>
-				<div class="skills-item">
-					<img src="{{ asset('assets/images/sass.png') }}">
-					<p>SASS</p>
-				</div>
-				<div class="skills-item">
-					<img src="{{ asset('assets/images/ps.png') }}">
-					<p>Photoshop</p>
-				</div>
+					<skill-card 
+						v-for="(skill, index) in skills"
+						:data="skill" 
+						:key="index">
+					</skill-card>
 			</div>
 		</div>
 	</div>
@@ -94,6 +39,10 @@
 
 
 @section('js')
+<script type="text/javascript">
+	var  getSkillsRoute = "{{route('skills.get')}}";
+</script>
+<script src="{{ asset('js/about.js') }}"></script>
 @endsection
 
 

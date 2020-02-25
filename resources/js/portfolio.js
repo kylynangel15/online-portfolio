@@ -6,8 +6,6 @@ new Vue({
  	el: "#portfolio",
 	data: {
 		portfolios: [],
-		selected_porfolio: [],
-		portfolio_imgs: [],
 		get_portfolio_route: getPortfolioRoute,
 	},
 	created() {

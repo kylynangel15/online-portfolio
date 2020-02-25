@@ -26,4 +26,5 @@ Route::get('/resume', function () {
 
 //API CONTROLS
 
-Route::get('get-portfolios', 'PortfolioController@index')->name('portfolio.get');
+Route::get('get-portfolios', 'PortfolioController@getPortfolio')->name('portfolio.get');
+Route::get('get-skills', 'PortfolioController@getSkills')->name('skills.get');

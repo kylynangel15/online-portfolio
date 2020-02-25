@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
 
 class PortfolioController extends Controller
 {
-    public function index(Request $request)
+    public function getPortfolio(Request $request)
     {
         $m7_imgs = $this->imgloop(5,'murasaki/m7_');
         $hey_imgs = $this->imgloop(3,'heyvideo/hey_');
@@ -83,6 +83,26 @@ class PortfolioController extends Controller
         return $imgs;
     }
 
+    public function getSkills(Request $request)
+    {   
+        return response()->json([ 
+        ['title' =>  'Laravel',     'img'   => asset('assets/images/laravel.png'),  'rate' => '70'],
+        ['title' =>  'Wordpress',   'img'   => asset('assets/images/wordpress.png'),'rate' => '60'],
+        ['title' =>  'PHP',         'img'   => asset('assets/images/php.png'),      'rate' => '75'],
+        ['title' =>  'C++',         'img'   => asset('assets/images/devc.png'),     'rate' => '60'],
+        ['title' =>  'VB.NET',      'img'   => asset('assets/images/vb.net.png'),   'rate' => '60'],
+        ['title' =>  'SQL Database','img'   => asset('assets/images/mysql.png'),    'rate' => '70'],
+        ['title' =>  'NPM',         'img'   => asset('assets/images/npm.png'),      'rate' => '50'],
+        ['title' =>  'YARN',        'img'   => asset('assets/images/yarn.png'),     'rate' => '50'],
+        ['title' =>  'REST API',    'img'   => asset('assets/images/restapi.png'),  'rate' => '70'],
+        ['title' =>  'Vue JS',      'img'   => asset('assets/images/vue.png'),      'rate' => '70'],
+        ['title' =>  'HTML',        'img'   => asset('assets/images/html.png'),     'rate' => '75'],
+        ['title' =>  'CSS',         'img'   => asset('assets/images/css.png'),      'rate' => '75'],
+        ['title' =>  'Javascript',  'img'   => asset('assets/images/js.png'),       'rate' => '75'],
+        ['title' =>  'SASS',        'img'   => asset('assets/images/sass.png'),     'rate' => '75'],
+        ['title' =>  'Photoshop',   'img'   => asset('assets/images/ps.png'),       'rate' => '75'],
+        ]);
+    }
 
 
 }
