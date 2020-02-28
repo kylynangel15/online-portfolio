@@ -1,6 +1,5 @@
 .main-wrapper {
   background-color: #111821;
-  margin-left: 28rem;
   height: 100%;
   width: auto;
   min-height: 100vh;
@@ -12,6 +11,22 @@ a {
 
 a:hover {
   text-decoration: none !important;
+}
+
+p {
+  color: #AAADB0;
+  font-size: 15px;
+  margin-top: 3rem;
+}
+
+.a-default {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.a-default:hover {
+  color: #FC7FB2 !important;
 }
 
 hr {

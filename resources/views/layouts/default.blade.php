@@ -4,7 +4,7 @@
 @extends('layouts.master')
 
 @section('content')
-  @include('components.sidebar')
+  <!-- @include('components.sidebar') -->
   <div class="main-wrapper">
 	  @yield('main')
   </div>

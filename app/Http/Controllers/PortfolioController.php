@@ -96,10 +96,10 @@ class PortfolioController extends Controller
         ['title' =>  'YARN',        'img'   => asset('assets/images/yarn.png'),     'rate' => '50'],
         ['title' =>  'REST API',    'img'   => asset('assets/images/restapi.png'),  'rate' => '70'],
         ['title' =>  'Vue JS',      'img'   => asset('assets/images/vue.png'),      'rate' => '70'],
+        ['title' =>  'SASS',        'img'   => asset('assets/images/sass.png'),     'rate' => '75'],
         ['title' =>  'HTML',        'img'   => asset('assets/images/html.png'),     'rate' => '75'],
         ['title' =>  'CSS',         'img'   => asset('assets/images/css.png'),      'rate' => '75'],
         ['title' =>  'Javascript',  'img'   => asset('assets/images/js.png'),       'rate' => '75'],
-        ['title' =>  'SASS',        'img'   => asset('assets/images/sass.png'),     'rate' => '75'],
         ['title' =>  'Photoshop',   'img'   => asset('assets/images/ps.png'),       'rate' => '75'],
         ]);
     }

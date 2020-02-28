@@ -1,5 +1,6 @@
 <template>
 	<div class="skills-item" @mouseover="active = true" @mouseleave="active = false" >
+		<p v-html="data.title"></p>
 		<img :src="data.img" v-show="active == false">
 		<div class="skill-rate">
 			<div class="c100 small" :class="'p'+ data.rate" v-show="active">
@@ -10,7 +11,6 @@
 	            </div>
 	        </div>
 		</div>
-		<p v-html="data.title"></p>
 	</div>
 
 </template>

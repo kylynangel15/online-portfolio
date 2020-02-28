@@ -3,7 +3,7 @@
 
 .container {
 	width: 100%;
-	margin: 0 auto;
+	margin: 5rem auto;
 	max-width: 1140px;
 }
 
@@ -17,26 +17,37 @@
 		font-weight: 800;
 	}
 
+	h2 {
+		border-left: 4px solid #FC7FB2;
+	    padding-left: 1rem;
+	    color: #F3F3F4;
+	    font-weight: 700;
+	    margin: 5rem 1rem;
+	}
+
 	h3 {
 		color: #AAADB0;
 		font-weight: 300;
 	}
 
+
 	&-info {
 		display: flex;
 		margin-right: 5rem;
 
-		p {
-			color: #AAADB0;
-		    font-size: 15px;
-		    width: 50%;
-		    margin-top: 3rem;
+		img{
+			width: 3rem;
+		    margin: 5px 8px;
+		}
+
+		&-desc {
+			margin: 3rem;
 		}
 
 		&-button {
 			display: flex;
 			width:50%;
-			margin: 40px;
+			margin: 3rem 0;
 		
 			button {
 				width: 15rem;
@@ -60,23 +71,24 @@
 			}
 
 		}
+
+		&-img {
+			margin: 3rem;
+			img {
+				width: 20rem;
+			}
+		}
 	}
 
 	&-skills {
-		h2 {
-			border-left: 4px solid #FC7FB2;
-		    padding-left: 1rem;
-		    color: #F3F3F4;
-		    font-weight: 700;
-		}
-
+		
 		.skills-container {
 			display: grid;
-		    grid-template-columns: auto auto auto auto auto;
+			grid-template-columns: repeat(5, 1fr);
+		    grid-template-rows: repeat(3, 18rem);;
 			padding: 10px;
 			
 			.skills-item {
-				padding: 20px;
 				font-size: 30px;
 				text-align: center;
 	        	display: flex;
@@ -86,7 +98,7 @@
 					img {
 						width: 7vw;
 						height: auto;
-						margin: auto;
+						margin: 1rem auto;
 					}
 
 					p {
@@ -97,12 +109,101 @@
 
 					.skill-rate {
 						margin: auto;
+
+						.c100 {
+							top: -20px;
+						}
 					}
 			}
 
 		}
+	}
 
+	&-awards {
+		&-container {
+			display: flex;
+		    justify-content: center;
+		    margin-bottom: 3rem;
+		    img {
+		    	margin: 2rem;
+		    	width: 18vw;
+		    	height: auto;
+		    }
+		}
+	}
 
+	&-timeline {
+		ul.timeline {
+		    list-style-type: none;
+		    position: relative;
+
+		    &:before {
+			    content: ' ';
+			    background: #d4d9df;
+			    display: inline-block;
+			    position: absolute;
+			    left: 29px;
+			    width: 2px;
+			    height: 100%;
+			    z-index: 400;
+			}
+
+			li {
+			    margin: 20px 0;
+			    padding-left: 20px;
+
+			   &:before {
+				    content: ' ';
+				    background: white;
+				    display: inline-block;
+				    position: absolute;
+				    border-radius: 50%;
+				    border: 4px solid #FC7FB2 ;
+				    left: 20px;
+				    width: 20px;
+				    height: 20px;
+				    z-index: 400;
+				}
+			}
+			.li-title {
+				font-size: 20px;	
+			}
+			.li-date {
+				float: right;
+				color: #FC7FB2;
+			}
+			.li-pos {
+				color: #fff;
+			}
+
+			.fa-trophy {
+				color: #FFDF00;
+			}
+
+		}
+	}
+
+	&-school {
+		ul.timeline {
+			margin-left: 10rem;
+
+			li {
+				position: relative;
+
+				&:before {
+				    left: -19px;
+				}
+			}
+
+			.li-title {
+				position: absolute;
+			    left: -140px;
+			    top: -4px;
+			    width: 11rem;
+			    text-align: right;
+			    font-size: 16px;
+			}
+		}	
 	}
 
 }

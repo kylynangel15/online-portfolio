@@ -2425,6 +2425,7 @@ var render = function() {
     }),
     _vm._v(" "),
     _c("a", {
+      staticClass: "a-default",
       attrs: { href: _vm.data.site, target: "_blank" },
       domProps: { innerHTML: _vm._s(_vm.data.title) }
     })

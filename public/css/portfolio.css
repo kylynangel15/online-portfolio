@@ -19,16 +19,6 @@
   cursor: pointer;
 }
 
-.portfolio-container .portfolio-item a {
-  color: #fff;
-  font-size: 16px;
-  margin-top: 5px;
-}
-
-.portfolio-container .portfolio-item a:hover {
-  color: #FC7FB2 !important;
-}
-
 .portfolio .gallery {
   display: none;
 }
