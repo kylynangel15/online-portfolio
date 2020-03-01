@@ -1,0 +1,22 @@
+
+a{
+	text-decoration: none !important;
+	&:hover {
+		text-decoration: none !important;
+	}
+}
+
+.a-default {
+	color: #fff;
+	font-size: 16px;
+	margin-top: 5px;
+
+	&:hover{
+		color: #fff !important;
+	}
+}
+
+hr {
+    border-top: 1px solid #47505E !important;
+}
+

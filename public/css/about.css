@@ -898,7 +898,7 @@
   padding-left: 1rem;
   color: #F3F3F4;
   font-weight: 700;
-  margin: 5rem 1rem;
+  margin: 3rem 1rem 10rem;
 }
 
 .about h3 {
@@ -936,11 +936,6 @@
   font-weight: 800;
 }
 
-.about-info-button .resume-button {
-  background-color: #2F435C;
-  border-color: #284161;
-}
-
 .about-info-button .portfolio-button {
   background-color: #FC7FB2;
   border-color: #b7547c;
@@ -948,6 +943,11 @@
 
 .about-info-button .portfolio-button:focus {
   outline-color: #d6206a !important;
+}
+
+.about-info-button .resume-button {
+  background-color: #2F435C;
+  border-color: #284161;
 }
 
 .about-info-img {

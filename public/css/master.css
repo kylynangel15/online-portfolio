@@ -1,22 +1,9 @@
-.main-wrapper {
-  background-color: #111821;
-  height: 100%;
-  width: auto;
-  min-height: 100vh;
-}
-
 a {
   text-decoration: none !important;
 }
 
 a:hover {
   text-decoration: none !important;
-}
-
-p {
-  color: #AAADB0;
-  font-size: 15px;
-  margin-top: 3rem;
 }
 
 .a-default {
@@ -26,81 +13,38 @@ p {
 }
 
 .a-default:hover {
-  color: #FC7FB2 !important;
+  color: #fff !important;
 }
 
 hr {
   border-top: 1px solid #47505E !important;
 }
 
-.sidebar {
-  margin: 0;
-  padding: 5rem 2rem;
-  width: 28rem;
-  background-color: #1E2A3A;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.sidebar-content {
+.navbar {
+  text-align: right;
+  background-color: black;
   width: 100%;
-  text-align: center;
 }
 
-.sidebar-content img {
-  border-radius: 50%;
+.navbar nav {
+  margin: 2rem 8vw;
 }
 
-.sidebar-content-info {
-  color: #fff;
-}
-
-.sidebar-content-info h3 {
-  font-size: 20px;
-  font-weight: 800;
-  line-height: 30px;
-}
-
-.sidebar-content-info p {
-  font-size: 14px;
-}
-
-.sidebar-content-social img {
-  width: 3rem;
-  margin: 5px 8px;
-}
-
-.sidebar-menu {
-  margin: 0 4rem;
-}
-
-.sidebar-menu a {
-  display: block;
-  color: #BCC0C4;
-  padding: 6px;
+.navbar nav a {
+  color: #d2d2d2;
+  margin: 2rem;
+  font-size: 16px;
   font-weight: 700;
-  font-size: 18px;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.sidebar-menu a.active {
-  color: #FC7FB2 !important;
+.sticky {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
 }
 
-.sidebar-menu a:hover:not(.active) {
-  color: white;
-}
-
-.sidebar-menu a .fa {
-  padding: 4px 16px;
-}
-
-.sidebar-menu a:nth-child(2) .fa {
-  padding: 4px 12px 4px 14px;
-}
-
-.sidebar-menu a:nth-child(3) .fa {
-  font-size: 15px;
+.main-wrapper {
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 

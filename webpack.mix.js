@@ -21,6 +21,7 @@ mix
     .sass('resources/sass/about.scss', 'public/css')
     .sass('resources/sass/portfolio.scss', 'public/css')
     .sass('resources/sass/circle.scss', 'public/css')
+    .sass('resources/sass/main.scss', 'public/css')
     .sass('resources/sass/resume.scss', 'public/css');
 
 mix

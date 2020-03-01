@@ -1,5 +1,5 @@
-
 @import "circle";  
+
 
 .container {
 	width: 100%;
@@ -56,10 +56,6 @@
 				color: white;
 			    font-weight: 800;
 			}
-			.resume-button {
-			    background-color: #2F435C;
-			    border-color: #284161;
-			}
 
 			.portfolio-button {
 			    background-color: #FC7FB2;
@@ -70,6 +66,10 @@
 			    }
 			}
 
+			.resume-button {
+			    background-color: #2F435C;
+			    border-color: #284161;
+			}
 		}
 
 		&-img {

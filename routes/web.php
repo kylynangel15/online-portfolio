@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-   return view('about');
+   return view('index');
 })->name('home');;
 
 Route::get('/portfolio', function () {
