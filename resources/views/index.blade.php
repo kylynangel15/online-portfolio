@@ -2,40 +2,28 @@
 
 @section('css')
     <link rel="stylesheet" href="{{ asset(mix('/css/main.css')) }}">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 @endsection
 
 @section('main')
-
-<div class="header">
-	
-	<div class="container ">
-		<div class="about-info">
-                <div class="about-info-desc">
-                    <img src="{{ asset('assets/images/id_pic.jpg') }}">
-                    <h1>Kylyn Angel M. Luterte</h1>
-                    <h3>Full Stack Web Developer</h3>    
-                    <p>I'm a Full-Stack Web Developer specialised in PHP, Laravel Framework, RESTful API, Javascript, CSS/SCSS, HTML, Vuejs and other skill sets. Hard Working individual and possessing a strong willingness to learn.</p>
-                    <!-- 
-                    <a class="active" href="https://www.facebook.com/kylynangel15" target="_blank">
-                        <img src="{{ asset('assets/images/Facebook.png') }}">
-                    </a>
-                    <a class="active" href="https://gitlab.com/kylynangel15/" target="_blank">
-                        <img src="{{ asset('assets/images/gitlab.png') }}">
-                    </a> -->
-
-                    <div class="info-button">
-                        <a href="">
-                            <button class="button-white" type="button" class="btn btn-danger">View Portfolio</button>
-                        </a>
-                        <a href="">
-                            <button class="button-white" type="button">Download Resume</button>
-                        </a>
-                    </div>
-                </div>
-				
-			</div>
-	</div>
-
+<div id="main-content">
+    @include('components.header')
+    @include('components.timeline')
+    @include('components.awards')
+    @include('components.skills')
+    @include('components.portfolio')        
 </div>
 
+
+@endsection
+
+@section('js')
+<script type="text/javascript">
+    var  getSkillsRoute = "{{route('skills.get')}}";
+    var  getPortfolioRoute = "{{route('portfolio.get')}}";
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="{{ asset('js/main.js') }}"></script>
 @endsection

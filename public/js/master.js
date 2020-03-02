@@ -93,10 +93,11 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-$(document).ready(function () {
-  var path = window.location.pathname;
-  if (path == '/portfolio') $('#sidenav-portfolio').addClass("active");else if (path == '/resume') $('#sidenav-resume').addClass("active");else $('#sidenav-about').addClass("active");
-});
+$(document).ready(function () {});
+
+function nav(page) {
+  console.log(page);
+}
 
 /***/ }),
 

@@ -1,9 +1,8 @@
 <div class="navbar sticky">
   <nav>
-    <a class="a-default" href="">WORK EXPERIENCES</a>
-    <a class="a-default" href="">AWARDS</a>
-    <a class="a-default" href="">SKILLS</a>
-    <a class="a-default" href="">EDUCATION</a>
-    <a class="a-default" href="">PORTFOLIO</a>
+    <a id="nav-work" class="a-default scroll-nav" href="#timeline-page">WORK EXPERIENCES</a>
+    <a id="nav-awards" class="a-default scroll-nav" href="#awards-page">AWARDS</a>
+    <a id="nav-skills" class="a-default scroll-nav" href="#skills-page">SKILLS</a>
+    <a id="nav-portfolio" class="a-default scroll-nav" href="#portfolio-page">PORTFOLIO</a>
   </nav>
 </div>

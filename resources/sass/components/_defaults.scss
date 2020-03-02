@@ -7,12 +7,24 @@ a{
 }
 
 .a-default {
-	color: #fff;
+	color: #d2d2d2;
 	font-size: 16px;
 	margin-top: 5px;
 
 	&:hover{
 		color: #fff !important;
+	}
+
+	&:focus {
+		color: #fff !important;
+	}
+}
+
+.a-black {
+	color: #6b6b6b;
+
+	&:hover{
+		color: #000 !important;
 	}
 }
 

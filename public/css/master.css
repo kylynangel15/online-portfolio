@@ -7,13 +7,25 @@ a:hover {
 }
 
 .a-default {
-  color: #fff;
+  color: #d2d2d2;
   font-size: 16px;
   margin-top: 5px;
 }
 
 .a-default:hover {
   color: #fff !important;
+}
+
+.a-default:focus {
+  color: #fff !important;
+}
+
+.a-black {
+  color: #6b6b6b;
+}
+
+.a-black:hover {
+  color: #000 !important;
 }
 
 hr {
@@ -24,6 +36,7 @@ hr {
   text-align: right;
   background-color: black;
   width: 100%;
+  z-index: 1000;
 }
 
 .navbar nav {
@@ -31,7 +44,6 @@ hr {
 }
 
 .navbar nav a {
-  color: #d2d2d2;
   margin: 2rem;
   font-size: 16px;
   font-weight: 700;

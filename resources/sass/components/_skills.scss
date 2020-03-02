@@ -1,0 +1,36 @@
+@import "circle";
+
+.skills-container {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 18rem);;
+	padding: 100px 150px 0;
+	
+	.skills-item {
+		font-size: 30px;
+		text-align: center;
+    	display: flex;
+	    flex-direction: column;
+	    justify-content: space-between;
+
+			img {
+				width: 7vw;
+				height: auto;
+				margin: 1rem auto;
+			}
+
+			p {
+			    font-weight: 700;
+			    margin-top: 5px;
+			}
+
+			.skill-rate {
+				margin: auto;
+
+				.c100 {
+					top: -20px;
+				}
+			}
+	}
+
+}

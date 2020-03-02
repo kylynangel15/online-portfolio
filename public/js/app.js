@@ -19317,17 +19317,6 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/sass/about.scss":
-/*!***********************************!*\
-  !*** ./resources/sass/about.scss ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
@@ -19372,43 +19361,18 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/sass/portfolio.scss":
-/*!***************************************!*\
-  !*** ./resources/sass/portfolio.scss ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ "./resources/sass/resume.scss":
-/*!************************************!*\
-  !*** ./resources/sass/resume.scss ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ 0:
-/*!*******************************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/master.scss ./resources/sass/about.scss ./resources/sass/portfolio.scss ./resources/sass/circle.scss ./resources/sass/main.scss ./resources/sass/resume.scss ***!
-  \*******************************************************************************************************************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/master.scss ./resources/sass/circle.scss ./resources/sass/main.scss ***!
+  \**************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\xampp\htdocs\my-portfolio\resources\js\app.js */"./resources/js/app.js");
 __webpack_require__(/*! C:\xampp\htdocs\my-portfolio\resources\sass\app.scss */"./resources/sass/app.scss");
 __webpack_require__(/*! C:\xampp\htdocs\my-portfolio\resources\sass\master.scss */"./resources/sass/master.scss");
-__webpack_require__(/*! C:\xampp\htdocs\my-portfolio\resources\sass\about.scss */"./resources/sass/about.scss");
-__webpack_require__(/*! C:\xampp\htdocs\my-portfolio\resources\sass\portfolio.scss */"./resources/sass/portfolio.scss");
 __webpack_require__(/*! C:\xampp\htdocs\my-portfolio\resources\sass\circle.scss */"./resources/sass/circle.scss");
-__webpack_require__(/*! C:\xampp\htdocs\my-portfolio\resources\sass\main.scss */"./resources/sass/main.scss");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\my-portfolio\resources\sass\resume.scss */"./resources/sass/resume.scss");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\my-portfolio\resources\sass\main.scss */"./resources/sass/main.scss");
 
 
 /***/ })
