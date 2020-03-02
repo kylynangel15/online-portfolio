@@ -112,6 +112,12 @@
   background-color: #FFF !important;
 }
 
+@media (max-width: 991px) {
+  .timeline-container {
+    padding: 0 3rem;
+  }
+}
+
 .timeline {
   position: relative;
   padding: 0;
@@ -127,6 +133,12 @@
   margin-left: -1.5px;
   content: "";
   background-color: #e9ecef;
+}
+
+@media (max-width: 991px) {
+  .timeline:before {
+    left: 75px;
+  }
 }
 
 .timeline li {
@@ -149,6 +161,13 @@
   background-color: #fff;
 }
 
+@media (max-width: 991px) {
+  .timeline li .timeline-image {
+    margin-left: 0;
+    left: 0;
+  }
+}
+
 .timeline li .timeline-image img {
   border-radius: 50% !important;
   max-width: 100%;
@@ -165,6 +184,14 @@
 
 .timeline li .timeline-panel h3 {
   font-weight: 700;
+}
+
+@media (max-width: 991px) {
+  .timeline li .timeline-panel {
+    padding: 0 20px 20px 20rem;
+    text-align: left;
+    width: 100%;
+  }
 }
 
 .timeline li .inverted {

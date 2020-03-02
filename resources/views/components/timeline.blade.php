@@ -2,7 +2,7 @@
 	<h2 class="section-title">WORK EXPERIENCES</h2>
 	<p class="section-subtitle">6 months as Technical Support Agent in Samsung and 1 year experience as WEB Full Stack Developer</p>
 
-	<div class="section-content">
+	<div class="section-content time-container">
 		<ul class="timeline">
 			<li>
 				<div class="timeline-image">
