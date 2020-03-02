@@ -1,13 +1,17 @@
 .header {
 	margin-bottom: 50px;
 	width: 100%;
-    max-height: 70rem;
+    max-height: 73rem;
     background-image: url('/assets/images/bg.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
 	
+    @media (min-width: 512px) and (max-width: 678px) {
+		max-height: 80rem;
+	}
+
 	img {
 		width: 100%;
 	}	
@@ -16,6 +20,10 @@
 		color: #F3F3F4;
 		padding: 13rem 10rem;
 
+		@media (max-width: 991px) {
+			padding: 13rem 0;
+		}
+
 		&-desc {
 			width: 100%;
 			text-align: center;
@@ -23,16 +31,28 @@
 			h1 {
 				font-size: 40px;
 				font-weight: 800;
+
+				@media (max-width: 678px) {
+					font-size: 7vw;
+				}
 			}
 
 			h3 {
 				font-size: 30px;
 			    margin-bottom: 4rem;
 				font-weight: 300;
+
+				@media (max-width: 678px) {
+					font-size: 6vw;
+				}
 			}
 
 			p {
-				font-size: 18px !important;
+				font-size: 18px;
+
+				@media (max-width: 425px) {
+					font-size: 4vw;
+				}
 			}
 
 
@@ -40,6 +60,9 @@
 				width: 20rem;
 			    border-radius: 50%;
 
+				@media (max-width: 678px) {
+					width: 35vw;
+				}
 			}
 
 			.info-button {
@@ -52,10 +75,15 @@
 					margin-right: 1rem;
 					color: #000;
 				    font-weight: 800;
+				   
+				    @media (max-width: 678px) {
+						margin-top: 1.5rem;
+					}
 
-				     &:focus {
+				    &:focus {
 					    outline: none !important;
 				    }
+
 				}
 
 				.button-white {

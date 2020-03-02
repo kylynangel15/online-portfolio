@@ -9,9 +9,9 @@
 <div id="main-content">
     @include('components.header')
     @include('components.timeline')
-    @include('components.awards')
+    <!-- @include('components.awards')
     @include('components.skills')
-    @include('components.portfolio')        
+    @include('components.portfolio') -->        
 </div>
 
 
