@@ -23,6 +23,14 @@
 		    @media (max-width: 991px) {
 			    left: 75px;
 			}
+
+			@media (max-width: 512px) {
+			    left: 50px;
+			}
+
+			@media (max-width: 425px) {
+			    left: 35px;
+			}
 	    }
 
 
@@ -49,6 +57,16 @@
 					left: 0;
 				}
 
+				@media (max-width: 512px) {
+			   		width: 100px;
+				    height: 100px;
+				}
+
+				@media (max-width: 425px) {
+			   		width: 70px;
+				    height: 70px;
+				}
+
 			    img {
 		    	    border-radius: 50%!important;
 	    	        max-width: 100%;
@@ -65,12 +83,36 @@
 
 	            h3 {
 				    font-weight: 700;
+
+			    	@media (max-width: 425px) {
+			    		font-size: 5vw;
+					}
+	            }
+
+	            h4 {
+			    	@media (max-width: 425px) {
+			    		font-size: 4vw;
+					}
+	            }
+
+	            p {
+			    	@media (max-width: 425px) {
+			    		font-size: 3.5vw;
+					}
 	            }
 
 	            @media (max-width: 991px) {
 	  			    padding: 0 20px 20px 20rem;
 			        text-align: left;
 				    width: 100%;
+				}
+
+			   	@media (max-width: 512px) {
+	  			    padding: 0 20px 20px 11rem;
+				}
+
+				@media (max-width: 425px) {
+	  			    padding: 0 20px 20px 8rem;
 				}
 	  		}
 
