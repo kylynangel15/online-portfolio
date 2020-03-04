@@ -13,15 +13,12 @@
 
 Route::get('/', function () {
    return view('index');
-})->name('home');;
+})->name('home');
 
-Route::get('/portfolio', function () {
-   return view('portfolio');
-})->name('portfolio');;
+Route::get('download-resume', 'PortfolioController@downloadResume')->name('download.resume');
 
-Route::get('/resume', function () {
-   return view('resume');
-})->name('resume');;
+
+
 
 
 //API CONTROLS

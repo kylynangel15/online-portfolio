@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use Illuminate\Support\Facades\Storage;
 
 class PortfolioController extends Controller
 {
@@ -107,6 +107,12 @@ class PortfolioController extends Controller
         ['title' =>  'Javascript',  'img'   => asset('assets/images/js.png'),       'rate' => '75'],
         ['title' =>  'Photoshop',   'img'   => asset('assets/images/ps.png'),       'rate' => '75'],
         ]);
+    }
+
+
+    public function downloadResume(Request $request)
+    {
+        return Storage::disk('public')->download('kylyn_angel_luterte_resume.pdf');
     }
 
 

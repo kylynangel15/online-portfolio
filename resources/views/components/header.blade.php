@@ -14,7 +14,7 @@
                         <a href="#timeline-page" class="scroll-nav">
                             <button class="button-white" type="button" class="btn btn-danger">Tell Me More</button>
                         </a>
-                        <a href="">
+                        <a href="{{route('download.resume')}}">
                             <button class="button-white" type="button">Download Resume</button>
                         </a>
                     </div>
