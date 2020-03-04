@@ -1332,6 +1332,10 @@ p {
   background-color: #F8F9FA;
 }
 
+.awards-page .section-content {
+  padding-top: 50px;
+}
+
 .awards-page img {
   margin: 3rem;
   width: auto;

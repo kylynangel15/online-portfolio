@@ -89,6 +89,41 @@ hr {
   width: 100%;
 }
 
+.footer {
+  background-color: #000;
+  width: 100%;
+  height: 8rem;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  color: #fff;
+}
+
+@media (max-width: 680px) {
+  .footer {
+    display: block;
+    text-align: center;
+    height: auto;
+  }
+}
+
+.footer p {
+  margin: 1rem;
+}
+
+@media (max-width: 680px) {
+  .footer p {
+    margin: 2rem;
+  }
+}
+
+.footer .social img {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 1rem;
+}
+
 @media (max-width: 991px) {
   .desktop {
     display: none !important;

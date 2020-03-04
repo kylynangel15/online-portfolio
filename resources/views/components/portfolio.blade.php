@@ -1,6 +1,6 @@
 <section id="portfolio-page" class="portfolio-page">
 	<h2 class="section-title">PORTFOLIO</h2>
-	<p class="section-subtitle"></p>
+	<p class="section-subtitle">Projects from NSTBG i supported and handled</p>
 
 	<div class="portfolio-container section-content" id="portfolioCard">
 			<portfolio-card 
