@@ -1,0 +1,34 @@
+
+a{
+	text-decoration: none !important;
+	&:hover {
+		text-decoration: none !important;
+	}
+}
+
+.a-default {
+	color: #d2d2d2;
+	font-size: 16px;
+	margin-top: 5px;
+
+	&:hover{
+		color: #fff !important;
+	}
+
+	&:focus {
+		color: #fff !important;
+	}
+}
+
+.a-black {
+	color: #6b6b6b;
+
+	&:hover{
+		color: #000 !important;
+	}
+}
+
+hr {
+    border-top: 1px solid #47505E !important;
+}
+

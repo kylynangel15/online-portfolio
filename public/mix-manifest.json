@@ -2,9 +2,8 @@
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
     "/css/master.css": "/css/master.css",
-    "/css/about.css": "/css/about.css",
-    "/css/portfolio.css": "/css/portfolio.css",
     "/css/circle.css": "/css/circle.css",
-    "/css/resume.css": "/css/resume.css",
+    "/css/main.css": "/css/main.css",
+    "/js/main.js": "/js/main.js",
     "/js/master.js": "/js/master.js"
 }

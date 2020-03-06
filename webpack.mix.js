@@ -11,14 +11,15 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
+mix
+	.js('resources/js/app.js', 'public/js')
     .js('resources/js/master.js', 'public/js')
+    .js('resources/js/main.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
     .sass('resources/sass/master.scss', 'public/css')
-    .sass('resources/sass/about.scss', 'public/css')
-    .sass('resources/sass/portfolio.scss', 'public/css')
     .sass('resources/sass/circle.scss', 'public/css')
-    .sass('resources/sass/resume.scss', 'public/css');
+    .sass('resources/sass/main.scss', 'public/css');
 
 mix
   .copy("resources/assets/images", "public/assets/images");
+

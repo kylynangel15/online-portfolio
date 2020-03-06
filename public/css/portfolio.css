@@ -1,0 +1,29 @@
+.portfolio {
+  padding: 5rem;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.portfolio-container .portfolio-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.portfolio-container .portfolio-item img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.portfolio .gallery {
+  display: none;
+}
+
+.portfolio .gallery-img {
+  width: 10%;
+}
+

@@ -1,0 +1,54 @@
+@import "components/_header";
+@import "components/_timeline";
+@import "components/_skills";
+@import "components/_portfolio";
+
+
+section {
+	padding: 50px 50px;
+	text-align: center;
+
+	@media (max-width: 678px) {
+		padding: 50px 15px;	
+	}
+}
+
+.section-title {
+	color: #000;
+	font-weight: 800;
+    font-size: 32px;
+}
+
+.section-subtitle {
+	font-style: italic;
+    font-weight: 500;	
+}
+
+.section-content {
+	padding-top: 100px;
+}
+
+p {
+	font-size: 16px;
+}
+
+
+.awards-page {
+	background-color: #F8F9FA;
+
+	.section-content {
+		padding-top: 50px
+	}
+	
+	img {
+		margin: 3rem;
+		width: auto;
+		height: auto;		
+
+		@media (max-width: 512px) {
+			width: 75vw;
+		}
+
+
+	}
+}
