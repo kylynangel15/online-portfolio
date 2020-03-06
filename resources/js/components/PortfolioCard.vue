@@ -1,7 +1,15 @@
 <template>
 	<div class='portfolio-item'>
-		<img :src="data.cover" v-on:click="showGallery(data)">
-		<a class="a-default" :href="data.site" target="_blank" v-html="data.title"></a>
+		<div class="portfolio-item-content">
+			<div class="portfolio-image">
+				<img :src="data.cover" v-on:click="showGallery(data)">
+			</div>
+			<div class="portfolio-caption">
+					<a class="a-black" :href="data.site" target="_blank" v-html="data.title"></a>
+					<p v-html="data.subtitle"></p>
+			</div>
+			
+		</div>
 	</div>
 </template>
 
@@ -22,3 +30,9 @@
 		}
 	}
 </script>
+
+<style type="text/css">
+	
+	
+
+</style>

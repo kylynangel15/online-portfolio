@@ -1,0 +1,126 @@
+
+.timeline-container {
+	 @media (max-width: 991px) {
+		padding: 0 3rem;
+	}
+}
+	
+	.timeline {
+	    position: relative;
+	    padding: 0;
+	    list-style: none;
+
+	    &:before {
+	    	position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    left: 50%;
+		    width: 2px;
+		    margin-left: -1.5px;
+		    content: '';
+		    background-color: #e9ecef;
+
+		    @media (max-width: 991px) {
+			    left: 75px;
+			}
+
+			@media (max-width: 512px) {
+			    left: 50px;
+			}
+
+			@media (max-width: 425px) {
+			    left: 35px;
+			}
+	    }
+
+
+	    li {
+	    	min-height: 150px;
+	    	margin-bottom: 100px;
+    	    position: relative;
+
+	  		.timeline-image {
+	  			width: 150px;
+			    height: 150px;
+			    margin-left: -75px;
+		        left: 50%;
+		        position: absolute;
+			    z-index: 100;
+			    text-align: center;
+			    color: #fff;
+			    border: 7px solid #e9ecef;
+			    border-radius: 100%;
+			    background-color: #fff;
+
+				@media (max-width: 991px) {
+				    margin-left: 0;
+					left: 0;
+				}
+
+				@media (max-width: 512px) {
+			   		width: 100px;
+				    height: 100px;
+				}
+
+				@media (max-width: 425px) {
+			   		width: 70px;
+				    height: 70px;
+				}
+
+			    img {
+		    	    border-radius: 50%!important;
+	    	        max-width: 100%;
+				    height: auto;
+			    }
+	  		}
+
+	  		.timeline-panel {
+  			    padding: 0 20px 20px;
+  			    float: left;
+			    width: 41%;
+		        text-align: right;
+	            position: relative;
+
+	            h3 {
+				    font-weight: 700;
+
+			    	@media (max-width: 425px) {
+			    		font-size: 5vw;
+					}
+	            }
+
+	            h4 {
+			    	@media (max-width: 425px) {
+			    		font-size: 4vw;
+					}
+	            }
+
+	            p {
+			    	@media (max-width: 425px) {
+			    		font-size: 3.5vw;
+					}
+	            }
+
+	            @media (max-width: 991px) {
+	  			    padding: 0 20px 20px 20rem;
+			        text-align: left;
+				    width: 100%;
+				}
+
+			   	@media (max-width: 512px) {
+	  			    padding: 0 20px 20px 11rem;
+				}
+
+				@media (max-width: 425px) {
+	  			    padding: 0 20px 20px 8rem;
+				}
+	  		}
+
+	  		.inverted {
+  			    float: right;
+		        text-align: left;
+	  		}
+	    }
+
+
+	}

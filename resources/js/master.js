@@ -1,10 +1,15 @@
-$( document ).ready(function() {
-	var path = window.location.pathname;
+$(".scroll-nav").on('click', function(e) {
+	e.preventDefault();
+	var target = $(this).attr('href');
 	
-	if(path == '/portfolio')
-		$('#sidenav-portfolio').addClass("active")
-	else if(path == '/resume')
-		$('#sidenav-resume').addClass("active")
-	else
-		$('#sidenav-about').addClass("active")
+	$('html, body').animate({
+		scrollTop: ($(target).offset().top)
+	}, 2000);
 });
+
+$('#mobile-menu').bind('click', function(e) { 
+    e.preventDefault();
+    $('.mobile-navbar').toggleClass('animated');
+});
+
+
